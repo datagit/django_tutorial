@@ -2,6 +2,7 @@
 ```bash
 # guide: https://codelearn.io/sharing/web-step-by-step-voi-django
 # https://www.howkteam.vn/course/lap-trinh-web-voi-python-bang-django/tao-mot-web-app-va-xu-ly-khi-nguoi-dung-yeu-cau-truy-cap-trong-python-django-1517
+# debugging: https://www.youtube.com/watch?v=oOeR6VZiPtI
 
 # install django
 pip3 install django
