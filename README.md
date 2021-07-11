@@ -37,4 +37,11 @@ python3 manage.py runserver
 
 # create app in django, each app is a feature of a website
 python3 manage.py startapp home
+# update setting for new app home
+python3 manage.py migrate
+
+# make a test case in home app
+# home/tests.py
+python3 manage.py test home
+
 ```
