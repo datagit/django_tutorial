@@ -56,4 +56,21 @@ python3 manage.py makemigrations blog
 # run migration
 python3 manage.py migrate
 
+# using query directly the same tinker of Laravel
+python3 manage.py shell
+# in mod shell
+>>> from blog.models import Post
+>>> a = Post()
+>>> a.title = 'First Title'
+>>> a.body = 'Hello World'
+>>> a.save()
+
+>>> b = Post(title='Secondary Post', body='Hello Django')
+>>> b.save()
+
+>>> Post.objects.all()
+
+>>> Post.objects.get(id=1)
+>>> exit()
+
 ```
