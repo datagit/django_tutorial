@@ -73,4 +73,9 @@ python3 manage.py shell
 >>> Post.objects.get(id=1)
 >>> exit()
 
+# admin
+python3 manage.py createsuperuser
+# admin/123456
+# datdao/123strong
+# modified -> blog/admin.py
 ```
