@@ -45,4 +45,15 @@ python3 manage.py migrate
 # home/tests.py
 python3 manage.py test home
 
+# create a table Post(id, title, body, date) -> https://docs.djangoproject.com/en/3.2/topics/db/models/
+# Django model data types -> https://www.webforefront.com/django/modeldatatypesandvalidation.html
+# create new app blog -> https://www.howkteam.vn/course/lap-trinh-web-voi-python-bang-django/dung-model-tao-bang-database-trong-python-django-1521
+python3 manage.py startapp blog
+# using model and database
+# updated -> blog/models.py
+# make migrations -> model Post
+python3 manage.py makemigrations blog
+# run migration
+python3 manage.py migrate
+
 ```
