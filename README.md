@@ -16,19 +16,14 @@ django-admin startproject mysite
 cd mysite
 tree
 .
-├── README.md
-├── db.sqlite3
-├── manage.py
+├── README.md         -> my tutorial
+├── db.sqlite3        -> database of SQLite
+├── manage.py         -> interactive django by command line interface
 └── mysite
-    ├── __init__.py
-    ├── __pycache__
-    │   ├── __init__.cpython-39.pyc
-    │   ├── settings.cpython-39.pyc
-    │   ├── urls.cpython-39.pyc
-    │   └── wsgi.cpython-39.pyc
+    ├── __init__.py   -> this folder as a python package
     ├── asgi.py
-    ├── settings.py
-    ├── urls.py
+    ├── settings.py   -> configure
+    ├── urls.py       -> URL of projects
     └── wsgi.py
 # start local server for develop
 python3 manage.py runserver
@@ -78,4 +73,7 @@ python3 manage.py createsuperuser
 # admin/123456
 # datdao/123strong
 # modified -> blog/admin.py
+
+# show list post
+# modified -> blog/views.py
 ```
