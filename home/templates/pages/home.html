@@ -1,3 +1,6 @@
 {% extends 'pages/base.html' %}
 {% block title %}Home Title1{% endblock %}
-{% block content %}<h1>Welcom to app home content<h1>{% endblock %}
+{% block content %}
+<h1>Welcom to app home content<h1>
+<a href="{% url 'blog' %}">blog</a>
+{% endblock %}

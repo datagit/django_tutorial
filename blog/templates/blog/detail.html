@@ -5,4 +5,5 @@
 <p>title: {{ post.title }}</p>
 <p>body: {{ post.body|safe|linebreaks }}</p>
 <p>date: {{ post.date }}</p>
+<a href="{% url 'blog' %}">got to back blog</a>
 {% endblock %}
