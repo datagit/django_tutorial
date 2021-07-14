@@ -9,4 +9,5 @@ class Post(models.Model):
     date = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return "id is {id}, title is {title}, body is {body}".format(id=self.id, title=self.title, body=self.body)
+        # "id is {id}, title is {title}, body is {body}".format(id=self.id, title=self.title, body=self.body)
+        return "{title}".format(title=self.title)

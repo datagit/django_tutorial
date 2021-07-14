@@ -76,4 +76,7 @@ python3 manage.py createsuperuser
 
 # show list post
 # modified -> blog/views.py
+
+# add test case -> blog/tests.py
+python3 manage.py test blog
 ```
