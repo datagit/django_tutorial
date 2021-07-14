@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Post
+from django.http import Http404
 # Create your views here.
 
 
@@ -9,5 +10,8 @@ def list(request):
 
 
 def detail(request, id):
-    post = Post.objects.get(id=id)
+    try:
+        post = Post.objects.get(id=id)
+    except Post.DoesNotExist:
+        raise Http404("the post is not found")
     return render(request, 'blog/detail.html', {'post': post})

@@ -79,4 +79,6 @@ python3 manage.py createsuperuser
 
 # add test case -> blog/tests.py
 python3 manage.py test blog
+# custom template 404
+
 ```
