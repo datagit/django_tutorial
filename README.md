@@ -81,4 +81,8 @@ python3 manage.py createsuperuser
 python3 manage.py test blog
 # custom template 404
 
+# update model -> image = models.ImageField(null = True)
+pip3 install Pillow
+python3 manage.py makemigrations
+python3 manage.py migrate
 ```

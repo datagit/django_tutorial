@@ -5,5 +5,8 @@
 <p>title: {{ post.title }}</p>
 <p>body: {{ post.body|safe|linebreaks }}</p>
 <p>date: {{ post.date }}</p>
+{% if post.image %}
+  <p>image: <img src="{{ post.image.url }}" width="500px" height="300px" /></p>
+{% endif %}
 <a href="{% url 'blog' %}">got to back blog</a>
 {% endblock %}
