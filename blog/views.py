@@ -4,6 +4,9 @@ from django.http import Http404
 # import the logging library
 import logging
 
+# generic views
+from django.views.generic import ListView, DetailView
+
 # Create your views here.
 
 # Get an instance of a logger
@@ -24,3 +27,14 @@ def detail(request, id):
     except Post.DoesNotExist:
         raise Http404("the post is not found")
     return render(request, 'blog/detail.html', {'post': post})
+
+# generic views
+class PostListView(ListView):
+    queryset = Post.objects.all().order_by('-date')
+    template_name = 'blog/blog.html'
+    context_object_name = 'Posts'
+    paginate_by = 1
+
+class PostDetailView(DetailView):
+    model = Post
+    template_name = 'blog/detail.html'

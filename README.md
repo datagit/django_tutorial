@@ -91,4 +91,6 @@ python3 manage.py migrate
 # django logging -> https://docs.djangoproject.com/en/3.2/topics/logging/
 # define a my custom logging -> https://djangocircle.com/how-to-create-different-custom-logs-formatter-for-info-warning-and-error-logs-in-django-web-application/
 # 4 Best practices and solutions for managing Django Logs in production server -> https://djangocircle.com/best-practices-and-solutions-for-managing-django-logs-in-production/
+# Generic display views -> https://docs.djangoproject.com/en/3.2/ref/class-based-views/generic-display/
+# Paginator -> https://docs.djangoproject.com/en/3.2/topics/pagination/
 ```
