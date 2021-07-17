@@ -1,6 +1,20 @@
-{% extends 'pages/base.html' %}
-{% block title %}Home Title1{% endblock %}
+{% extends 'pages/base.html' %} {% block title %}Home Title1{% endblock %} 
 {% block content %}
-<h1>Welcom to app home content<h1>
-<a href="{% url 'blog' %}">blog</a>
+<h1>
+  Welcom to app home content
+  <h1>
+    <a href="{% url 'register' %}">register</a>
+    <a href="{% url 'blog' %}">blog</a>
+    {% if user.username %}
+    <p>Xin chào {{user.username}}</p>
+    <p><a href="{% url 'logout' %}">Đăng xuất</a></p>
+    {% else %}
+    <p>
+      <a href="{% url 'register' %}">Đăng ký</a>|<a href="{% url 'login' %}"
+        >Đăng nhập</a
+      >
+    </p>
+    {% endif %}
 {% endblock %}
+  </h1>
+</h1>

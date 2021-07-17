@@ -85,4 +85,6 @@ python3 manage.py test blog
 pip3 install Pillow
 python3 manage.py makemigrations
 python3 manage.py migrate
+# create from login, logout
+# https://www.howkteam.vn/course/lap-trinh-web-voi-python-bang-django/tao-form-dang-ky-tai-khoan-trong-python-django-1530
 ```

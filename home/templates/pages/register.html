@@ -1,0 +1,15 @@
+{% extends 'pages/base.html' %} {% block title %}Home Title1{% endblock %} 
+{% block content %}
+<h1>
+  Welcom to app home > register
+  <h1>
+    <center>
+      <form action="." method="POST">
+        {% csrf_token %} {{form.as_p}}
+        <input type="submit" value="Đăng ký" />
+      </form>
+    </center>
+    <a href="{% url 'blog' %}">blog</a>
+    {% endblock %}
+  </h1>
+</h1>
