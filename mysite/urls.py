@@ -18,11 +18,13 @@ from django.urls import path, include
 from django.conf.urls import handler404
 from django.conf.urls.static import static
 from django.conf import settings
+from course.views import GetAllCoursesApiView
 
 urlpatterns = [
     path('', include('home.urls')),
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
+    path('course/', GetAllCoursesApiView.as_view())
 ]
 
 if settings.DEBUG:

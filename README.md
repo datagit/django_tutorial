@@ -93,4 +93,17 @@ python3 manage.py migrate
 # 4 Best practices and solutions for managing Django Logs in production server -> https://djangocircle.com/best-practices-and-solutions-for-managing-django-logs-in-production/
 # Generic display views -> https://docs.djangoproject.com/en/3.2/ref/class-based-views/generic-display/
 # Paginator -> https://docs.djangoproject.com/en/3.2/topics/pagination/
+
+# Django REST framework is a powerful and flexible toolkit for building Web APIs. -> https://www.django-rest-framework.org/
+pip3 install djangorestframework
+pip3 install markdown       # Markdown support for the browsable API.
+pip3 install django-filter  # Filtering support
+
+# create new app
+python3 manage.py startapp course
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+# call api
+curl --location --request GET 'http://127.0.0.1:8000/course/'
 ```
