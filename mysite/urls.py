@@ -27,8 +27,8 @@ router.register(r'users', UserViewSet)
 router.register(r'groups', GroupViewSet)
 
 urlpatterns = [
-    # path('', include('home.urls')),
-    path('', include(router.urls)),
+    path('', include('home.urls')),
+    path('api/', include(router.urls)),
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
     path('course/', GetAllCoursesApiView.as_view())

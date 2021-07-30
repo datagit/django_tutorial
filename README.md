@@ -112,4 +112,6 @@ curl --location --request GET 'http://127.0.0.1:8000/course/'
 curl --location --request GET 'http://127.0.0.1:8000/users/' \
 --header 'Authorization: Basic ZGF0OjEyMzQ1Ng=='
 # decode base64 -> https://www.base64decode.org/
+
+# How to Create Django Signals -> https://simpleisbetterthancomplex.com/tutorial/2016/07/28/how-to-create-django-signals.html
 ```
