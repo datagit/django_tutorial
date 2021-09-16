@@ -5,13 +5,26 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Python: ${workspaceFolder}/tutorial_python_src/outter_function.py",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
       "name": "Python: Django",
       "type": "python",
       "request": "launch",
       "program": "${workspaceFolder}/manage.py",
-      "args": [
-        "runserver"
-      ],
+      "args": ["runserver"],
+      "django": true
+    },
+    {
+      "name": "Python: Django test",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/manage.py",
+      "args": ["test"],
       "django": true
     }
   ]

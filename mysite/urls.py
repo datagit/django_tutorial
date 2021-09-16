@@ -31,7 +31,8 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
-    path('course/', GetAllCoursesApiView.as_view())
+    path('course/', GetAllCoursesApiView.as_view()),
+    path('tinymce/', include('tinymce.urls')),
 ]
 
 if settings.DEBUG:

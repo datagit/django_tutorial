@@ -114,4 +114,8 @@ curl --location --request GET 'http://127.0.0.1:8000/users/' \
 # decode base64 -> https://www.base64decode.org/
 
 # How to Create Django Signals -> https://simpleisbetterthancomplex.com/tutorial/2016/07/28/how-to-create-django-signals.html
+
+# https://github.com/jazzband/django-tinymce
+# https://django-tinymce.readthedocs.io/en/latest/installation.html
+# The HTMLField model field type -> https://django-tinymce.readthedocs.io/en/latest/usage.html#using-the-widget
 ```
