@@ -1,11 +1,11 @@
 {% extends "pages/base.html" %}
 {% block title %}Blog{% endblock %}
 {% block content %}
-<h1>List posts<h1>
-{% for post in Posts %}
-   <h4>{{post.date|date:"d-m-Y"}} <a href="{% url 'post' post.id  %}">{{ post.title }}</a>
-{% endfor %}
-{% if page_obj.has_next %}
-    <a href="{{ request.path }}?page={{ page_obj.next_page_number }}"> page tiep -> </a>
-{% endif %}
+    <h1>List posts<h1>
+    {% for post in Posts %}
+        <h4>{{post.date|date:"d-m-Y"}} <a href="{% url 'post' post.id  %}">{{ post.title }}</a>
+    {% endfor %}
+    {% if page_obj.has_next %}
+        <a href="{{ request.path }}?page={{ page_obj.next_page_number }}"> page tiep -> </a>
+    {% endif %}
 {% endblock %}

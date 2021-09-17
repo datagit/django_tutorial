@@ -118,4 +118,14 @@ curl --location --request GET 'http://127.0.0.1:8000/users/' \
 # https://github.com/jazzband/django-tinymce
 # https://django-tinymce.readthedocs.io/en/latest/installation.html
 # The HTMLField model field type -> https://django-tinymce.readthedocs.io/en/latest/usage.html#using-the-widget
+
+# generate file with all packages used in your PC
+pip3 freeze > requirements.txt
+
+# generate file with all packages used in project
+pip3 install pipreqs
+pipreqs ./
+# > INFO: Successfully saved requirements file in ./requirements.txt
+# if we have a file requirements.txt then we can install all packages in this file
+pip3 install -r ./requirements.txt
 ```

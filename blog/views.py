@@ -34,6 +34,9 @@ class PostListView(ListView):
     template_name = 'blog/blog.html'
     context_object_name = 'Posts'
     paginate_by = 1
+    logger.info("Init log from view")
+    logger.warning("Init warning from view")
+    logger.error("Test error")
 
 class PostDetailView(DetailView):
     model = Post
