@@ -39,6 +39,7 @@ Jinja2==3.0.1
 keyring==23.0.1
 kubernetes==17.17.0
 lazy-object-proxy==1.6.0
+linecache2==1.0.0
 macholib==1.15.2
 Markdown==3.3.4
 MarkupSafe==2.0.1
@@ -85,11 +86,13 @@ social-auth-core==3.2.0
 sqlparse==0.3.0
 toml==0.10.2
 tqdm==4.61.1
+traceback2==1.4.0
 -e git+https://github.com/overhangio/tutor.git@d3bfc4fb87c8377a1a81a5b9c95b47bb8a0973d2#egg=tutor
 twine==3.4.1
 types-PyYAML==5.4.3
 types-setuptools==57.0.0
 typing-extensions==3.10.0.0
+unittest2==1.1.0
 urllib3==1.26.6
 virtualenv==20.6.0
 webencodings==0.5.1

@@ -128,4 +128,7 @@ pipreqs ./
 # > INFO: Successfully saved requirements file in ./requirements.txt
 # if we have a file requirements.txt then we can install all packages in this file
 pip3 install -r ./requirements.txt
+
+# unittest my function -> https://www.digitalocean.com/community/tutorials/how-to-use-unittest-to-write-a-test-case-for-a-function-in-python
+python3 -m unittest2 tutorial_python_src/myrun.py
 ```
